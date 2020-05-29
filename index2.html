@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS BOX MODEL</title>
+    <style media="screen">
+      body{
+        background-color: #E9E9E9;
+        font-family: cursive;
+
+      }
+      .flex-container{
+        display: flex;
+        width: 600px;
+        height: 500px;
+        border-radius: 5px;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items:center;
+        box-shadow: 0 10px 10px grey;
+        margin:auto;
+        position:absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+
+
+
+
+
+
+      }
+      #box-1{
+        width: 600px;
+        height: 250px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: white;
+
+
+
+      }
+
+      #box-1 , #box-2  > p{
+        font-size: 15px;
+      }
+
+
+
+
+      #box-2{
+        width: 300px;
+        height: 250px;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #18B19B;
+        color: white;
+
+
+      }
+      #box-3{
+        width: 300px;
+        height: 250px;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #0CECD1;
+            color: white;
+      }
+      #box-3 > p{
+        font-size: 10px;
+      }
+      h1{
+        font-size: 30px;
+
+      }
+      h2{
+        font-size: 20px;
+
+      }
+
+      button{
+        background-color: #7BEF2B;
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px;
+
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+    <div id="box-1">
+      <h1><span style="color:#0CECD1;"> Join our community</span></h1>
+      <h2 style="color:#8ADD3E ;">30-day, hassle-free money back guarantee</h2>
+  <p style="color:#D1D4D4; ">Gain access to our full library of tutorials along with expert code reviews.</p>
+<p style="color:#D1D4D4; ">Perfect for any developers who are serious about honing their skills.</p>
+</div>
+    <div id="box-2">
+      <h2>Monthly Subscription</h2>
+      <p><span style="font-size: 20px; font-weight: bold;">$29</span> per month </p>
+      <p>Full access for less than $1 a day</p>
+      <button type="button" name="Sign Up"><span style="color: white;">Sign Up</button>
+    </div>
+
+    <div  id="box-3">
+      <h2>Why Us</h2>
+      <p>Tutorials by industry experts</p>
+      <p>Peer & expert code review</p>
+      <p>Coding exercises</p>
+      <p>Access to our Github repos</p>
+      <p>Community forum</p>
+      <p>Flashcard decks</p>
+      <p>New videos every week</p>
+    </div>
+    </div>
+
+  </body>
+</html>
